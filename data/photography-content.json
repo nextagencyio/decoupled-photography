@@ -1,0 +1,327 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Photography studio homepage with hero, stats, featured galleries, and CTA",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]" },
+        { "id": "featured_galleries_title", "label": "Featured Galleries Title", "type": "string" },
+        { "id": "cta_title", "label": "CTA Section Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA Text", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA Text", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "gallery",
+      "label": "Gallery",
+      "description": "A photography gallery showcasing a collection of images from a shoot",
+      "body": true,
+      "fields": [
+        { "id": "photography_style", "label": "Photography Style", "type": "term(photography_styles)[]" },
+        { "id": "shoot_date", "label": "Shoot Date", "type": "datetime" },
+        { "id": "location", "label": "Location", "type": "string" },
+        { "id": "image", "label": "Featured Image", "type": "image" },
+        { "id": "image_count", "label": "Image Count", "type": "integer" }
+      ]
+    },
+    {
+      "bundle": "service",
+      "label": "Service",
+      "description": "Photography services offered by the studio",
+      "body": true,
+      "fields": [
+        { "id": "service_type", "label": "Service Type", "type": "term(service_types)[]" },
+        { "id": "starting_price", "label": "Starting Price", "type": "string" },
+        { "id": "duration", "label": "Session Duration", "type": "string" },
+        { "id": "image", "label": "Featured Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "testimonial",
+      "label": "Testimonial",
+      "description": "Client testimonials and reviews",
+      "body": true,
+      "fields": [
+        { "id": "client_name", "label": "Client Name", "type": "string" },
+        { "id": "service_type_name", "label": "Service Type", "type": "string" },
+        { "id": "photo", "label": "Client Photo", "type": "image" },
+        { "id": "rating", "label": "Rating", "type": "integer" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!" },
+        { "id": "label", "label": "Label", "type": "string!" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-sessions",
+      "type": "paragraph.stat_item",
+      "values": { "number": "2,500+", "label": "Sessions Completed" }
+    },
+    {
+      "id": "stat-clients",
+      "type": "paragraph.stat_item",
+      "values": { "number": "1,200+", "label": "Happy Clients" }
+    },
+    {
+      "id": "stat-awards",
+      "type": "paragraph.stat_item",
+      "values": { "number": "35", "label": "Industry Awards" }
+    },
+    {
+      "id": "stat-years",
+      "type": "paragraph.stat_item",
+      "values": { "number": "15+", "label": "Years of Experience" }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Welcome to Lumiere Photography",
+        "hero_title": "Capturing Life's Finest Moments",
+        "hero_subtitle": "Through the Art of Light",
+        "hero_description": "<p>We specialize in creating timeless images that tell your unique story. From intimate portraits to grand celebrations, our lens captures the beauty in every frame.</p>",
+        "stats_items": ["@stat-sessions", "@stat-clients", "@stat-awards", "@stat-years"],
+        "featured_galleries_title": "Recent Work",
+        "cta_title": "Ready to Create Something Beautiful?",
+        "cta_description": "<p>Whether it's a wedding, portrait session, or commercial project, we'd love to bring your vision to life.</p>",
+        "cta_primary": "Book a Session",
+        "cta_secondary": "View Our Work"
+      }
+    },
+    {
+      "id": "gallery-wedding-vineyard",
+      "type": "node.gallery",
+      "path": "/gallery/vineyard-wedding",
+      "values": {
+        "title": "Vineyard Wedding - Sarah & James",
+        "body": "<p>A breathtaking autumn wedding set among rolling vineyards in Napa Valley. The golden hour light created an unforgettable atmosphere as Sarah and James exchanged vows surrounded by family and friends.</p><h2>Highlights</h2><ul><li>Outdoor ceremony at sunset</li><li>Candlelit reception in the barrel room</li><li>First dance under string lights</li></ul>",
+        "photography_style": ["wedding"],
+        "shoot_date": "2025-10-15T14:00:00",
+        "location": "Napa Valley, California",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+          "alt": "Vineyard Wedding - Sarah & James"
+        },
+        "image_count": 245
+      }
+    },
+    {
+      "id": "gallery-urban-portraits",
+      "type": "node.gallery",
+      "path": "/gallery/urban-portraits",
+      "values": {
+        "title": "Urban Portrait Series - Downtown Collection",
+        "body": "<p>An editorial portrait series capturing the energy and style of city life. Shot across iconic downtown locations, these portraits blend fashion, architecture, and personality into striking compositions.</p><h2>Locations</h2><ul><li>Historic warehouse district</li><li>Rooftop gardens</li><li>Art deco lobbies</li></ul>",
+        "photography_style": ["portrait"],
+        "shoot_date": "2025-11-02T10:00:00",
+        "location": "Chicago, Illinois",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+          "alt": "Urban Portrait Series"
+        },
+        "image_count": 86
+      }
+    },
+    {
+      "id": "gallery-product-launch",
+      "type": "node.gallery",
+      "path": "/gallery/artisan-product-launch",
+      "values": {
+        "title": "Artisan Product Launch - Craft & Co",
+        "body": "<p>A commercial photography project for a premium artisan brand launch. Every product was styled and lit to highlight the craftsmanship and quality that defines the Craft & Co brand.</p><h2>Deliverables</h2><ul><li>Hero images for website</li><li>Social media content</li><li>Print catalog photography</li></ul>",
+        "photography_style": ["commercial"],
+        "shoot_date": "2025-09-20T09:00:00",
+        "location": "Studio - Portland, Oregon",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+          "alt": "Artisan Product Launch"
+        },
+        "image_count": 120
+      }
+    },
+    {
+      "id": "gallery-family-seaside",
+      "type": "node.gallery",
+      "path": "/gallery/seaside-family-session",
+      "values": {
+        "title": "Seaside Family Session - The Andersons",
+        "body": "<p>A warm and playful family portrait session along the rugged coastline. The Anderson family brought infectious energy and genuine joy that shines through every photograph.</p><h2>Session Details</h2><ul><li>Golden hour beach portraits</li><li>Candid family interactions</li><li>Individual and group compositions</li></ul>",
+        "photography_style": ["portrait"],
+        "shoot_date": "2025-08-10T17:00:00",
+        "location": "Cannon Beach, Oregon",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80",
+          "alt": "Seaside Family Session"
+        },
+        "image_count": 65
+      }
+    },
+    {
+      "id": "service-wedding",
+      "type": "node.service",
+      "path": "/services/wedding-photography",
+      "values": {
+        "title": "Wedding Photography",
+        "body": "<p>Your wedding day deserves to be captured with artistry and care. Our wedding photography packages include full-day coverage, a second photographer, and a beautifully curated gallery of edited images.</p><h2>What's Included</h2><ul><li>Pre-wedding consultation and timeline planning</li><li>Full-day coverage (up to 10 hours)</li><li>Second photographer</li><li>500+ edited high-resolution images</li><li>Private online gallery</li><li>Engagement session included</li></ul>",
+        "service_type": ["wedding"],
+        "starting_price": "$3,500",
+        "duration": "Full Day (8-10 hours)",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=80",
+          "alt": "Wedding Photography Service"
+        }
+      }
+    },
+    {
+      "id": "service-portrait",
+      "type": "node.service",
+      "path": "/services/portrait-photography",
+      "values": {
+        "title": "Portrait Photography",
+        "body": "<p>Whether it's a professional headshot, family portrait, or creative editorial, our portrait sessions are designed to bring out your authentic self in every frame.</p><h2>Session Options</h2><ul><li>Individual headshots and portraits</li><li>Family and group sessions</li><li>Creative and editorial portraits</li><li>Location or studio setting</li></ul>",
+        "service_type": ["portrait"],
+        "starting_price": "$350",
+        "duration": "1-2 hours",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
+          "alt": "Portrait Photography Service"
+        }
+      }
+    },
+    {
+      "id": "service-commercial",
+      "type": "node.service",
+      "path": "/services/commercial-photography",
+      "values": {
+        "title": "Commercial Photography",
+        "body": "<p>Elevate your brand with professional commercial photography. From product shots to lifestyle imagery, we create visual content that drives engagement and sales.</p><h2>Services Include</h2><ul><li>Product photography</li><li>Brand lifestyle imagery</li><li>Food and beverage photography</li><li>Architecture and interior photography</li></ul>",
+        "service_type": ["commercial"],
+        "starting_price": "$1,200",
+        "duration": "Half Day (4 hours)",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+          "alt": "Commercial Photography Service"
+        }
+      }
+    },
+    {
+      "id": "service-event",
+      "type": "node.service",
+      "path": "/services/event-photography",
+      "values": {
+        "title": "Event Photography",
+        "body": "<p>Capture the energy and emotion of your event with our professional event photography services. From corporate galas to birthday celebrations, we document every important moment.</p><h2>Event Types</h2><ul><li>Corporate events and conferences</li><li>Birthday and anniversary parties</li><li>Charity galas and fundraisers</li><li>Launch parties and openings</li></ul>",
+        "service_type": ["event"],
+        "starting_price": "$800",
+        "duration": "3-6 hours",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+          "alt": "Event Photography Service"
+        }
+      }
+    },
+    {
+      "id": "testimonial-1",
+      "type": "node.testimonial",
+      "path": "/testimonials/sarah-james",
+      "values": {
+        "title": "Sarah & James - Wedding",
+        "body": "<p>Working with Lumiere Photography was the best decision we made for our wedding. They captured every emotion, every detail, and every spontaneous moment with such artistry. Our photos are absolutely stunning and we couldn't be happier.</p>",
+        "client_name": "Sarah & James Mitchell",
+        "service_type_name": "Wedding Photography",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+          "alt": "Sarah Mitchell"
+        },
+        "rating": 5
+      }
+    },
+    {
+      "id": "testimonial-2",
+      "type": "node.testimonial",
+      "path": "/testimonials/david-chen",
+      "values": {
+        "title": "David Chen - Commercial",
+        "body": "<p>The product photos Lumiere created for our brand launch exceeded all expectations. The attention to lighting and composition made our products look incredible. Sales increased 40% after updating our website with their images.</p>",
+        "client_name": "David Chen",
+        "service_type_name": "Commercial Photography",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+          "alt": "David Chen"
+        },
+        "rating": 5
+      }
+    },
+    {
+      "id": "testimonial-3",
+      "type": "node.testimonial",
+      "path": "/testimonials/martinez-family",
+      "values": {
+        "title": "The Martinez Family - Portrait",
+        "body": "<p>Our family session at the beach was so much fun! The photographer made everyone feel comfortable, even our kids who can never sit still. The photos are natural, joyful, and exactly what we wanted to hang on our walls.</p>",
+        "client_name": "Maria Martinez",
+        "service_type_name": "Portrait Photography",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+          "alt": "Maria Martinez"
+        },
+        "rating": 5
+      }
+    },
+    {
+      "id": "testimonial-4",
+      "type": "node.testimonial",
+      "path": "/testimonials/tech-forward",
+      "values": {
+        "title": "Tech Forward Inc - Event",
+        "body": "<p>Lumiere covered our annual conference with incredible professionalism. They captured keynote speakers, networking moments, and the overall atmosphere perfectly. The photos have been invaluable for our marketing materials.</p>",
+        "client_name": "Rachel Torres, Marketing Director",
+        "service_type_name": "Event Photography",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+          "alt": "Rachel Torres"
+        },
+        "rating": 4
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Lumiere Photography",
+        "body": "<p>Founded in 2010, Lumiere Photography has grown from a one-person passion project into a full-service photography studio serving clients across the Pacific Northwest and beyond.</p><h2>Our Philosophy</h2><p>We believe every photograph should tell a story. Our approach combines technical precision with artistic vision, creating images that are both beautiful and meaningful. The name \"Lumiere\" -- French for light -- reflects our dedication to mastering the interplay of light and shadow that makes photography an art form.</p><h2>Our Team</h2><p>Our team of five photographers brings diverse specialties and perspectives, ensuring we can match the right artist to every project. From intimate portrait sessions to large-scale commercial shoots, we approach every assignment with creativity and professionalism.</p><h2>Awards & Recognition</h2><ul><li>International Photography Awards - Gold, Wedding Category (2024)</li><li>Professional Photographers of America - Master Photographer designation</li><li>Best of Portland - Top Photography Studio (2022-2025)</li></ul>"
+      }
+    },
+    {
+      "id": "page-pricing",
+      "type": "node.page",
+      "path": "/pricing",
+      "values": {
+        "title": "Pricing",
+        "body": "<h2>Investment Guide</h2><p>We offer a range of packages to suit different needs and budgets. Every package includes professional editing, a private online gallery, and high-resolution digital files.</p><h2>Custom Quotes</h2><p>Every project is unique, and we're happy to create custom packages tailored to your specific needs. Contact us for a personalized quote.</p><h2>What's Always Included</h2><ul><li>Pre-session consultation</li><li>Professional editing and color correction</li><li>Private online gallery with download access</li><li>High-resolution digital files</li><li>Print release for personal use</li></ul>"
+      }
+    }
+  ]
+}

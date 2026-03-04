@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Lumiere Photography",
+          "path": "/homepage",
+          "heroTitle": "Capturing Life's Finest Moments",
+          "heroSubtitle": "Through the Art of Light",
+          "heroDescription": {
+            "processed": "<p>We specialize in creating timeless images that tell your unique story. From intimate portraits to grand celebrations, our lens captures the beauty in every frame.</p>",
+            "summary": "We specialize in creating timeless images that tell your unique story. From intimate portraits to grand celebrations, our lens captures the beauty in every frame."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-sessions",
+              "title": "",
+              "number": "2,500+",
+              "label": "Sessions Completed"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-clients",
+              "title": "",
+              "number": "1,200+",
+              "label": "Happy Clients"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-awards",
+              "title": "",
+              "number": "35",
+              "label": "Industry Awards"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "15+",
+              "label": "Years of Experience"
+            }
+          ],
+          "featuredGalleriesTitle": "Recent Work",
+          "ctaTitle": "Ready to Create Something Beautiful?",
+          "ctaDescription": {
+            "processed": "<p>Whether it's a wedding, portrait session, or commercial project, we'd love to bring your vision to life.</p>",
+            "summary": "Whether it's a wedding, portrait session, or commercial project, we'd love to bring your vision to life."
+          },
+          "ctaPrimary": "Book a Session",
+          "ctaSecondary": "View Our Work"
+        }
+      ]
+    }
+  }
+}

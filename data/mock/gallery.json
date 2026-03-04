@@ -1,0 +1,197 @@
+{
+  "data": {
+    "nodeGalleries": {
+      "__typename": "NodeGalleryConnection",
+      "nodes": [
+        {
+          "__typename": "NodeGallery",
+          "id": "gallery-wedding-vineyard",
+          "title": "Vineyard Wedding - Sarah & James",
+          "path": "/gallery/vineyard-wedding",
+          "body": {
+            "processed": "<p>A breathtaking autumn wedding set among rolling vineyards in Napa Valley. The golden hour light created an unforgettable atmosphere as Sarah and James exchanged vows surrounded by family and friends.</p><h2>Highlights</h2><ul><li>Outdoor ceremony at sunset</li><li>Candlelit reception in the barrel room</li><li>First dance under string lights</li></ul>",
+            "summary": "A breathtaking autumn wedding set among rolling vineyards in Napa Valley. The golden hour light created an unforgettable atmosphere as Sarah and James exchanged vows surrounded by family and friends.H"
+          },
+          "photographyStyle": [
+            {
+              "id": "wedding",
+              "name": "wedding"
+            }
+          ],
+          "shootDate": {
+            "timestamp": 1760554800
+          },
+          "location": "Napa Valley, California",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+            "alt": "Vineyard Wedding - Sarah & James",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "imageCount": 245
+        },
+        {
+          "__typename": "NodeGallery",
+          "id": "gallery-urban-portraits",
+          "title": "Urban Portrait Series - Downtown Collection",
+          "path": "/gallery/urban-portraits",
+          "body": {
+            "processed": "<p>An editorial portrait series capturing the energy and style of city life. Shot across iconic downtown locations, these portraits blend fashion, architecture, and personality into striking compositions.</p><h2>Locations</h2><ul><li>Historic warehouse district</li><li>Rooftop gardens</li><li>Art deco lobbies</li></ul>",
+            "summary": "An editorial portrait series capturing the energy and style of city life. Shot across iconic downtown locations, these portraits blend fashion, architecture, and personality into striking compositions"
+          },
+          "photographyStyle": [
+            {
+              "id": "portrait",
+              "name": "portrait"
+            }
+          ],
+          "shootDate": {
+            "timestamp": 1762099200
+          },
+          "location": "Chicago, Illinois",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+            "alt": "Urban Portrait Series",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "imageCount": 86
+        },
+        {
+          "__typename": "NodeGallery",
+          "id": "gallery-product-launch",
+          "title": "Artisan Product Launch - Craft & Co",
+          "path": "/gallery/artisan-product-launch",
+          "body": {
+            "processed": "<p>A commercial photography project for a premium artisan brand launch. Every product was styled and lit to highlight the craftsmanship and quality that defines the Craft & Co brand.</p><h2>Deliverables</h2><ul><li>Hero images for website</li><li>Social media content</li><li>Print catalog photography</li></ul>",
+            "summary": "A commercial photography project for a premium artisan brand launch. Every product was styled and lit to highlight the craftsmanship and quality that defines the Craft & Co brand.DeliverablesHero imag"
+          },
+          "photographyStyle": [
+            {
+              "id": "commercial",
+              "name": "commercial"
+            }
+          ],
+          "shootDate": {
+            "timestamp": 1758376800
+          },
+          "location": "Studio - Portland, Oregon",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+            "alt": "Artisan Product Launch",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "imageCount": 120
+        },
+        {
+          "__typename": "NodeGallery",
+          "id": "gallery-family-seaside",
+          "title": "Seaside Family Session - The Andersons",
+          "path": "/gallery/seaside-family-session",
+          "body": {
+            "processed": "<p>A warm and playful family portrait session along the rugged coastline. The Anderson family brought infectious energy and genuine joy that shines through every photograph.</p><h2>Session Details</h2><ul><li>Golden hour beach portraits</li><li>Candid family interactions</li><li>Individual and group compositions</li></ul>",
+            "summary": "A warm and playful family portrait session along the rugged coastline. The Anderson family brought infectious energy and genuine joy that shines through every photograph.Session DetailsGolden hour bea"
+          },
+          "photographyStyle": [
+            {
+              "id": "portrait",
+              "name": "portrait"
+            }
+          ],
+          "shootDate": {
+            "timestamp": 1754863200
+          },
+          "location": "Cannon Beach, Oregon",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80",
+            "alt": "Seaside Family Session",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "imageCount": 65
+        }
+      ]
+    }
+  }
+}

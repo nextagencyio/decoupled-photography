@@ -1,0 +1,185 @@
+{
+  "data": {
+    "nodeServices": {
+      "__typename": "NodeServiceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeService",
+          "id": "service-wedding",
+          "title": "Wedding Photography",
+          "path": "/services/wedding-photography",
+          "body": {
+            "processed": "<p>Your wedding day deserves to be captured with artistry and care. Our wedding photography packages include full-day coverage, a second photographer, and a beautifully curated gallery of edited images.</p><h2>What's Included</h2><ul><li>Pre-wedding consultation and timeline planning</li><li>Full-day coverage (up to 10 hours)</li><li>Second photographer</li><li>500+ edited high-resolution images</li><li>Private online gallery</li><li>Engagement session included</li></ul>",
+            "summary": "Your wedding day deserves to be captured with artistry and care. Our wedding photography packages include full-day coverage, a second photographer, and a beautifully curated gallery of edited images.W"
+          },
+          "serviceType": [
+            {
+              "id": "wedding",
+              "name": "wedding"
+            }
+          ],
+          "startingPrice": "$3,500",
+          "duration": "Full Day (8-10 hours)",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=80",
+            "alt": "Wedding Photography Service",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-portrait",
+          "title": "Portrait Photography",
+          "path": "/services/portrait-photography",
+          "body": {
+            "processed": "<p>Whether it's a professional headshot, family portrait, or creative editorial, our portrait sessions are designed to bring out your authentic self in every frame.</p><h2>Session Options</h2><ul><li>Individual headshots and portraits</li><li>Family and group sessions</li><li>Creative and editorial portraits</li><li>Location or studio setting</li></ul>",
+            "summary": "Whether it's a professional headshot, family portrait, or creative editorial, our portrait sessions are designed to bring out your authentic self in every frame.Session OptionsIndividual headshots and"
+          },
+          "serviceType": [
+            {
+              "id": "portrait",
+              "name": "portrait"
+            }
+          ],
+          "startingPrice": "$350",
+          "duration": "1-2 hours",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
+            "alt": "Portrait Photography Service",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-commercial",
+          "title": "Commercial Photography",
+          "path": "/services/commercial-photography",
+          "body": {
+            "processed": "<p>Elevate your brand with professional commercial photography. From product shots to lifestyle imagery, we create visual content that drives engagement and sales.</p><h2>Services Include</h2><ul><li>Product photography</li><li>Brand lifestyle imagery</li><li>Food and beverage photography</li><li>Architecture and interior photography</li></ul>",
+            "summary": "Elevate your brand with professional commercial photography. From product shots to lifestyle imagery, we create visual content that drives engagement and sales.Services IncludeProduct photographyBrand"
+          },
+          "serviceType": [
+            {
+              "id": "commercial",
+              "name": "commercial"
+            }
+          ],
+          "startingPrice": "$1,200",
+          "duration": "Half Day (4 hours)",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+            "alt": "Commercial Photography Service",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-event",
+          "title": "Event Photography",
+          "path": "/services/event-photography",
+          "body": {
+            "processed": "<p>Capture the energy and emotion of your event with our professional event photography services. From corporate galas to birthday celebrations, we document every important moment.</p><h2>Event Types</h2><ul><li>Corporate events and conferences</li><li>Birthday and anniversary parties</li><li>Charity galas and fundraisers</li><li>Launch parties and openings</li></ul>",
+            "summary": "Capture the energy and emotion of your event with our professional event photography services. From corporate galas to birthday celebrations, we document every important moment.Event TypesCorporate ev"
+          },
+          "serviceType": [
+            {
+              "id": "event",
+              "name": "event"
+            }
+          ],
+          "startingPrice": "$800",
+          "duration": "3-6 hours",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+            "alt": "Event Photography Service",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

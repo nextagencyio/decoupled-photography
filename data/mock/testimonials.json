@@ -1,0 +1,165 @@
+{
+  "data": {
+    "nodeTestimonials": {
+      "__typename": "NodeTestimonialConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-1",
+          "title": "Sarah & James - Wedding",
+          "path": "/testimonials/sarah-james",
+          "body": {
+            "processed": "<p>Working with Lumiere Photography was the best decision we made for our wedding. They captured every emotion, every detail, and every spontaneous moment with such artistry. Our photos are absolutely stunning and we couldn't be happier.</p>",
+            "summary": "Working with Lumiere Photography was the best decision we made for our wedding. They captured every emotion, every detail, and every spontaneous moment with such artistry. Our photos are absolutely st"
+          },
+          "clientName": "Sarah & James Mitchell",
+          "serviceTypeName": "Wedding Photography",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+            "alt": "Sarah Mitchell",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "rating": 5
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-2",
+          "title": "David Chen - Commercial",
+          "path": "/testimonials/david-chen",
+          "body": {
+            "processed": "<p>The product photos Lumiere created for our brand launch exceeded all expectations. The attention to lighting and composition made our products look incredible. Sales increased 40% after updating our website with their images.</p>",
+            "summary": "The product photos Lumiere created for our brand launch exceeded all expectations. The attention to lighting and composition made our products look incredible. Sales increased 40% after updating our w"
+          },
+          "clientName": "David Chen",
+          "serviceTypeName": "Commercial Photography",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "David Chen",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "rating": 5
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-3",
+          "title": "The Martinez Family - Portrait",
+          "path": "/testimonials/martinez-family",
+          "body": {
+            "processed": "<p>Our family session at the beach was so much fun! The photographer made everyone feel comfortable, even our kids who can never sit still. The photos are natural, joyful, and exactly what we wanted to hang on our walls.</p>",
+            "summary": "Our family session at the beach was so much fun! The photographer made everyone feel comfortable, even our kids who can never sit still. The photos are natural, joyful, and exactly what we wanted to h"
+          },
+          "clientName": "Maria Martinez",
+          "serviceTypeName": "Portrait Photography",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+            "alt": "Maria Martinez",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "rating": 5
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-4",
+          "title": "Tech Forward Inc - Event",
+          "path": "/testimonials/tech-forward",
+          "body": {
+            "processed": "<p>Lumiere covered our annual conference with incredible professionalism. They captured keynote speakers, networking moments, and the overall atmosphere perfectly. The photos have been invaluable for our marketing materials.</p>",
+            "summary": "Lumiere covered our annual conference with incredible professionalism. They captured keynote speakers, networking moments, and the overall atmosphere perfectly. The photos have been invaluable for our"
+          },
+          "clientName": "Rachel Torres, Marketing Director",
+          "serviceTypeName": "Event Photography",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Rachel Torres",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "rating": 4
+        }
+      ]
+    }
+  }
+}
