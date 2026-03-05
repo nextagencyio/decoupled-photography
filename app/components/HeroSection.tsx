@@ -29,7 +29,7 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
                 View Gallery
               </a>
               <a
-                href="/contact"
+                href="/services"
                 className="px-8 py-3 border-2 border-primary-800 text-primary-800 rounded-lg hover:bg-primary-50 transition-colors font-semibold"
               >
                 Book a Session

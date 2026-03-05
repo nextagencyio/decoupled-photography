@@ -23,7 +23,7 @@ export default function CTASection({ homepageContent }: CTASectionProps) {
           </div>
           <div className="flex-shrink-0">
             <a
-              href="/contact"
+              href="/services"
               className="inline-flex items-center px-8 py-4 bg-primary-800 text-white rounded-lg hover:bg-primary-700 transition-colors font-bold text-lg"
             >
               {primaryLabel}

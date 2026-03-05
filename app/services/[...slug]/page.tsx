@@ -126,7 +126,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </dl>
                 <div className="mt-8">
                   <Link
-                    href="/contact"
+                    href="/services"
                     className="block w-full text-center px-6 py-3 bg-rose-700 text-white rounded-lg font-bold hover:bg-rose-600 transition-colors"
                   >
                     Contact Us

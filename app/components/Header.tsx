@@ -72,7 +72,7 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <Link
-              href="/contact"
+              href="/services"
               className="hidden sm:inline-flex items-center bg-primary-800 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200 font-semibold text-sm"
             >
               Contact Us
