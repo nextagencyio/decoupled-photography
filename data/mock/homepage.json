@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-sessions",
               "title": "",
-              "number": "2,500+",
+              "number": "2,500+", "value": "2,500+",
               "label": "Sessions Completed"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-clients",
               "title": "",
-              "number": "1,200+",
+              "number": "1,200+", "value": "1,200+",
               "label": "Happy Clients"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-awards",
               "title": "",
-              "number": "35",
+              "number": "35", "value": "35",
               "label": "Industry Awards"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-years",
               "title": "",
-              "number": "15+",
+              "number": "15+", "value": "15+",
               "label": "Years of Experience"
             }
           ],
