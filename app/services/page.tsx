@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import ServiceCard from '../components/ServiceCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Services | Lumen Studio',
