@@ -24,7 +24,7 @@ interface ServiceByPathData {
 async function getService(path: string): Promise<DrupalService | null> {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_SERVICE_BY_PATH, { path })
+    const data = await client.raw(GET_SERVICE_BY_PATH, { path })
     return data?.route?.entity || null
   } catch (error) {
     console.error('Error fetching service:', error)
