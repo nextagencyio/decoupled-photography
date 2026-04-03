@@ -16,11 +16,7 @@ export const metadata: Metadata = {
 async function getData() {
   try {
     const client = getClient()
-    const data = await client.raw<TestimonialsData>(({
-      query: GET_TESTIMONIALS,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    }))
+    const data = await client.raw(GET_TESTIMONIALS, { first: 50 }) as TestimonialsData
     return data?.nodeTestimonials?.nodes || []
   } catch (error) {
     console.error('Error fetching testimonials:', error)

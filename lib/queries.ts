@@ -1,5 +1,4 @@
-// Tagged template that returns the query string
-const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce((a, s, i) => a + s + (values[i] || ''), '')
+import { gql } from '@apollo/client'
 
 export const GET_HOMEPAGE_DATA = gql`
   query GetHomepageData {

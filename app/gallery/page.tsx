@@ -16,11 +16,7 @@ export const metadata: Metadata = {
 async function getData() {
   try {
     const client = getClient()
-    const data = await client.raw<GalleriesData>(({
-      query: GET_GALLERIES,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    }))
+    const data = await client.raw(GET_GALLERIES, { first: 50 }) as GalleriesData
     return data?.nodeGalleries?.nodes || []
   } catch (error) {
     console.error('Error fetching gallery:', error)

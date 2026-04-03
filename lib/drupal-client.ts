@@ -10,6 +10,13 @@
 import { createClient } from 'decoupled-client'
 import type { TypedClient } from '@/schema/client'
 import { isDemoMode, handleMockQuery } from './demo-mode'
+import type { DocumentNode } from '@apollo/client'
+
+/** Extract a raw query string from either a string or Apollo DocumentNode. */
+function toQueryString(query: string | DocumentNode): string {
+  if (typeof query === 'string') return query
+  return (query as any).loc?.source?.body ?? ''
+}
 
 let _client: TypedClient | null = null
 let _mockClient: TypedClient | null = null
@@ -37,7 +44,7 @@ function createMockTypedClient(): TypedClient {
       return result?.data?.route?.entity || null
     },
     async raw(query, variables) {
-      const result = handleMockQuery(JSON.stringify({ query: typeof query === 'string' ? query : '', variables })); return result?.data ?? result
+      const result = handleMockQuery(JSON.stringify({ query: toQueryString(query), variables })); return result?.data ?? result
     },
   } as TypedClient
 
@@ -88,13 +95,49 @@ export function getClient(): TypedClient {
           query ($path: String!) {
             route(path: $path) {
               ... on RouteInternal {
-                entity { ... on NodePage { __typename id title path body { processed } } }
+                entity {
+                  ... on NodePage { __typename id title path body { processed } }
+                  ... on NodeHomepage {
+                    __typename id title path
+                    heroTitle heroSubtitle
+                    heroDescription { processed }
+                    statsItems { ... on ParagraphStatItem { id number label } }
+                    featuredGalleriesTitle
+                    ctaTitle ctaDescription { processed }
+                    ctaPrimary ctaSecondary
+                  }
+                  ... on NodeGallery {
+                    __typename id title path
+                    body { processed }
+                    photographyStyle { ... on TermInterface { id name } }
+                    shootDate { timestamp }
+                    location
+                    image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                    imageCount
+                  }
+                  ... on NodeService {
+                    __typename id title path
+                    body { processed }
+                    serviceType { ... on TermInterface { id name } }
+                    startingPrice
+                    duration
+                    image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                  }
+                  ... on NodeTestimonial {
+                    __typename id title path
+                    body { processed }
+                    clientName
+                    serviceTypeName
+                    photo { url alt width height }
+                    rating
+                  }
+                }
               }
             }
           }
         `)
       },
-      async raw(query, variables) { return base.query(query, variables) },
+      async raw(query, variables) { return base.query(toQueryString(query), variables) },
     } as TypedClient
   }
 
